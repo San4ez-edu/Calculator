@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор</title>
+  <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="display-wrapper">
+      <div id="history"></div>
+      <input type="text" id="display" disabled />
+    </div>
+    <div class="buttons">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="percent()">%</button>
+      <button onclick="toggleSign()">±</button>
+      <button onclick="addOp('/')">÷</button>
+      <button onclick="addNum('7')">7</button>
+      <button onclick="addNum('8')">8</button>
+      <button onclick="addNum('9')">9</button>
+      <button onclick="addOp('*')">×</button>
+      <button onclick="addNum('4')">4</button>
+      <button onclick="addNum('5')">5</button>
+      <button onclick="addNum('6')">6</button>
+      <button onclick="addOp('-')">−</button>
+      <button onclick="addNum('1')">1</button>
+      <button onclick="addNum('2')">2</button>
+      <button onclick="addNum('3')">3</button>
+      <button onclick="addOp('+')">+</button>
+      <button onclick="addNum('0')" class="zero">0</button>
+      <button onclick="addNum('.')">,</button>
+      <button onclick="calculate()">=</button>
+    </div>
+  </div>
+  <script src="/main.js"></script>
+</body>
+</html>
